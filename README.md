@@ -43,7 +43,7 @@ See [sample answer key](examples/answer-key.csv) and [sample answers](examples/s
 - `examples/` - synthetic quiz CSV files
 - `output/` - generated reports (ignored by Git)
 - [Design document](docs/design.md)
-- [Eisenhower Matrix](docs/eisenhower-matrix.md)
+- [Eisenhower Matrix (PDF)](docs/eisenhower-matrix.pdf) · [Markdown version](docs/eisenhower-matrix.md)
 - [Manual test checklist](docs/test-plan.md)
 - [Homework Google Doc](https://docs.google.com/document/d/1RyccEZwJ1W4BKwszNWhDETVaH8-iuPGLJmULnyaFADA/edit)
 
