@@ -1,6 +1,6 @@
 # Manual test checklist
 
-These are planned checks, not tests that have passed. There is no Java implementation yet.
+Once the grader runs, I’ll check these cases:
 
 - [ ] Normal sample: 3/4 correct (75%); question 2 incorrect.
 - [ ] Missing-answer sample: 3/4 correct (75%); question 3 unanswered.
@@ -11,4 +11,4 @@ These are planned checks, not tests that have passed. There is no Java implement
 - [ ] Empty answer key gives a clear error rather than dividing by zero.
 - [ ] Malformed rows or duplicate question numbers give a clear error.
 - [ ] Terminal and exported results agree.
-- [ ] New batch-grading feature works and the single-quiz MVP still works before merging.
+- [ ] After adding batch grading, try one quiz on its own and two quizzes together.

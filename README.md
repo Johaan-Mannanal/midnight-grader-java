@@ -1,72 +1,23 @@
 # Midnight Grader
 
-A CS193 project to help students check multiple-choice practice quizzes without comparing every answer manually.
+I want to help students check their practice quizzes without having to compare every answer manually. I’m building Midnight Grader in Java for CS193, using the same tools I use in CS180. So far, I’ve finished the design and made sample quiz files to test it.
 
-## Status
+## How it will work
 
-Planning stage. This repository contains the project plan, feature matrix, system diagram, test checklist, and sample quiz files. Java implementation has not started.
+Give the program two CSV files: an [answer key](examples/answer-key.csv) and your [quiz answers](examples/student-answers.csv). It will match answers by question number, print your score and the questions you missed, and save the results as a CSV. Each question is worth one point. A blank or missing answer earns no points and shows up as unanswered.
 
-## MVP scope
+For example, the sample answers should score **3/4 (75%)**, with question 2 marked wrong. The [second example](examples/student-answers-missing.csv) should get the same score, but show question 3 as unanswered.
 
-- Load an answer key and one student's answers from CSV files.
-- Match questions, calculate the score, and identify missed or unanswered questions.
-- Display results in the terminal and export a CSV report.
+![How Midnight Grader reads, checks, and scores a quiz](docs/system-diagram.png)
 
-Every question is worth one point. Blank or missing answers count as incorrect. Questions are matched by number, so row order does not matter. Missing files and malformed input should produce useful error messages.
+## Build plan
 
-## How it works
+- [x] Draw the diagram and make the sample files.
+- [ ] Read both CSV files and check for missing files or invalid rows.
+- [ ] Grade the quiz and print the results.
+- [ ] Save the results and work through the [test checklist](docs/test-plan.md).
+- [ ] On a separate branch, add the option to grade multiple quizzes at once.
 
-![Midnight Grader flowchart showing how it checks the two input files, scores a quiz, and saves the results](docs/system-diagram.png)
+I’ll use IntelliJ and the Java standard library. The quiz files and results will stay on the student’s computer. Later, I’d like to support questions worth different points and let students look back at earlier attempts.
 
-[Editable diagram](docs/system-diagram.drawio)
-
-## Tech stack
-
-- Java, using the JDK used in CS180
-- Java standard library: file I/O, Scanner, and number formatting
-- Local CSV storage; no database, external dependency, account, or API required
-- IntelliJ, Git, and GitHub
-
-Check the installed Java version with `java -version` and `javac -version`. Compile/run instructions will be added alongside the Java implementation.
-
-## Input format
-
-Answer key and student-answer files use two columns:
-
-```csv
-question,answer
-1,B
-2,A
-3,D
-```
-
-See [sample answer key](examples/answer-key.csv) and [sample answers](examples/student-answers.csv). All example data is synthetic. The normal sample should score 3/4 (75%), with question 2 incorrect. The missing-answer sample should also score 3/4, with question 3 unanswered.
-
-## Project files
-
-- `src/` - future Java implementation
-- `tests/` - future automated tests
-- `examples/` - synthetic quiz CSV files
-- `output/` - generated reports (ignored by Git)
-- [Homework 9 design document (PDF)](docs/homework-9-design.pdf) · [Markdown version](docs/design.md)
-- [Eisenhower Matrix (PDF)](docs/eisenhower-matrix.pdf) · [Markdown version](docs/eisenhower-matrix.md)
-- [Manual test checklist](docs/test-plan.md)
-- [Homework Google Doc](https://docs.google.com/document/d/1RyccEZwJ1W4BKwszNWhDETVaH8-iuPGLJmULnyaFADA/edit)
-
-## Roadmap
-
-- [x] Define the problem and MVP; create the repository and planning files
-- [ ] Read and validate the answer key
-- [ ] Read and validate student answers
-- [ ] Compare answers and calculate scores
-- [ ] Display per-question results
-- [ ] Export CSV reports
-- [ ] Test edge cases and finish setup documentation
-- [x] Draw and commit the system diagram and editable source
-- [ ] Schedule feature: grade multiple quizzes in one run, developed on a feature branch
-- [ ] Future: questions worth different points
-- [ ] Future: results from previous attempts
-
-## Outside this project
-
-Handwriting recognition, AI essay grading, user accounts, and cloud syncing are outside the planned scope.
+[Homework 9 design PDF, including the matrix](docs/homework-9-design.pdf) · [Design notes](docs/design.md) · [Eisenhower matrix](docs/eisenhower-matrix.md) · [Editable diagram](docs/system-diagram.drawio)

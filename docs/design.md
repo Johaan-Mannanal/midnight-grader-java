@@ -2,11 +2,9 @@
 
 Johaan Joseph Mannanal | November 1, 2026
 
-Status: The project plan and system diagram are ready. Java implementation has not started.
-
 ## 1.1 Problem statement
 
-I want to help students check their practice quizzes without having to compare every answer manually. Checking answers one at a time takes time and makes it easy to miss a mistake.
+I want to help students check their practice quizzes without having to compare every answer manually.
 
 ## 1.2 Idea / solution
 
@@ -14,25 +12,7 @@ Midnight Grader will be a Java terminal program that compares a student's multip
 
 ## 2.1 Eisenhower Matrix and MVP
 
-### Do - MVP
-- Load an answer key and student answers.
-- Compare answers and calculate a score.
-- Display and export the results.
-
-### Schedule - Later
-- Grade multiple quizzes in one run.
-- Support questions worth different points.
-- Show results from previous attempts.
-
-### Delegate - Use existing libraries
-- Use Java's standard library for file reading and writing.
-- Use Scanner for console input.
-- Use Java's formatting tools for percentages.
-
-### Delete - Outside this project
-- Handwriting recognition.
-- AI grading of essays.
-- Accounts and cloud syncing.
+My [feature matrix](eisenhower-matrix.md) separates what I need for the first version from what I can add later. For the first version, I’ll load two CSV files, grade one quiz, and show and save the results.
 
 ### Basic grading rules
 
@@ -43,12 +23,7 @@ Midnight Grader will be a Java terminal program that compares a student's multip
 
 ## 2.2 Tech stack
 
-Language: Java, using the JDK used in CS180.
-Interface: Terminal prompts and text output.
-Libraries: Java standard library, including file I/O, Scanner, and number formatting; no external dependencies.
-Storage: Local CSV files for the answer key, student answers, and results.
-Data sources: Sample quiz files I create myself; no internet service or API required.
-Development tools: IntelliJ, Git, and GitHub.
+I’ll write the program in Java using IntelliJ and track changes with Git and GitHub. I’ll use Java’s standard library to read and write CSV files, take input in the terminal, and format the score. I’ll make my own sample quiz files.
 
 ### Input format
 
@@ -65,7 +40,7 @@ Both input files use the header `question,answer`, followed by question-number a
 7. Test edge cases and finish the setup instructions.
 8. On a separate branch, add grading for multiple student files, test it, and merge it.
 
-Each implementation step should be tested before moving on and committed with a descriptive message. The additional feature will be developed on its own branch and merged after both it and the original MVP work.
+I’ll test and commit each step before starting the next one.
 
 ## 2.4 System diagram
 
@@ -78,7 +53,3 @@ Each implementation step should be tested before moving on and committed with a 
 Public repository: https://github.com/Johaan-Mannanal/midnight-grader-java
 
 Homework Google Doc: https://docs.google.com/document/d/1RyccEZwJ1W4BKwszNWhDETVaH8-iuPGLJmULnyaFADA/edit
-
-Folder structure: `src/` for future Java code, `tests/` for future tests, `docs/` for planning and the student-drawn diagram, `examples/` for synthetic input CSV files, and `output/` for generated reports.
-
-The README contains the goal, MVP scope, future plans, tech stack, input format, current status, and links to the planning documents. Compile/run instructions will be added when there is working Java code.
