@@ -1,0 +1,85 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="njeo9jIIxGXTI_6KRdZt">
+    <mxGraphModel dx="769" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Start Midnight Grader" vertex="1">
+          <mxGeometry height="80" width="235" x="303" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-2" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Read the two CSV files: the answer key and the student&#39;s quiz answers." vertex="1">
+          <mxGeometry height="60" width="235" x="308" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Show the score and list the wrong or unanswered questions." vertex="1">
+          <mxGeometry height="60" width="235" x="308" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Are both the files readable and valid?" vertex="1">
+          <mxGeometry height="95" width="235" x="308" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Match answers by question number. Give one point for each correct answer. Blank or missing answers earn zero." vertex="1">
+          <mxGeometry height="60" width="244.5" x="303" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-6" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Save the results to results.csv" vertex="1">
+          <mxGeometry height="80" width="200" x="325.5" y="732" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Show which file has a problem and stop." vertex="1">
+          <mxGeometry height="60" width="160" x="610" y="407.5" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="422" y="240" as="sourcePoint" />
+            <mxPoint x="422" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-9" edge="1" parent="1" source="pfgLYHVyZFlTo4WdEEDd-2" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pfgLYHVyZFlTo4WdEEDd-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="410" as="sourcePoint" />
+            <mxPoint x="490" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-10" edge="1" parent="1" source="pfgLYHVyZFlTo4WdEEDd-4" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="pfgLYHVyZFlTo4WdEEDd-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="630" y="550" as="sourcePoint" />
+            <mxPoint x="630" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-11" edge="1" parent="1" source="pfgLYHVyZFlTo4WdEEDd-5" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pfgLYHVyZFlTo4WdEEDd-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="680" y="560" as="sourcePoint" />
+            <mxPoint x="680" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-12" edge="1" parent="1" source="pfgLYHVyZFlTo4WdEEDd-3" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="pfgLYHVyZFlTo4WdEEDd-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="730" y="640" as="sourcePoint" />
+            <mxPoint x="730" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-13" edge="1" parent="1" source="pfgLYHVyZFlTo4WdEEDd-4" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pfgLYHVyZFlTo4WdEEDd-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="730" y="590" as="sourcePoint" />
+            <mxPoint x="730" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Two file paths" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="CSV Rows" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Yes" vertex="1">
+          <mxGeometry height="30" width="60" x="440" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Score and results by question" vertex="1">
+          <mxGeometry height="30" width="98" x="440" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Quiz Results" vertex="1">
+          <mxGeometry height="30" width="70" x="440" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="pfgLYHVyZFlTo4WdEEDd-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="No" vertex="1">
+          <mxGeometry height="30" width="60" x="543" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

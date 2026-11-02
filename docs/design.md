@@ -2,7 +2,7 @@
 
 Johaan Joseph Mannanal | November 1, 2026
 
-Status: Planning complete except for the student-drawn system diagram. Java implementation has not started.
+Status: The project plan and system diagram are ready. Java implementation has not started.
 
 ## 1.1 Problem statement
 
@@ -67,11 +67,11 @@ Both input files use the header `question,answer`, followed by question-number a
 
 Each implementation step should be tested before moving on and committed with a descriptive message. The additional feature will be developed on its own branch and merged after both it and the original MVP work.
 
-## 2.4 System diagram - pending student drawing
+## 2.4 System diagram
 
-The student-drawn diagram and its source file still need to be added. No diagram has been generated or included.
+![Midnight Grader checks the input files, grades each answer, displays missed questions, and saves the results to a CSV file.](system-diagram.png)
 
-The drawing should show the starting point, major MVP steps, input and output files, and labeled data/control flow. It should also show the invalid-input path. Export a PNG or JPG, embed it in the homework document, and commit both the image and editable source to `docs/`.
+[Editable diagram](system-diagram.drawio)
 
 ## 3.1 GitHub repository and README
 

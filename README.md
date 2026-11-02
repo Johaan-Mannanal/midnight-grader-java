@@ -4,7 +4,7 @@ A CS193 project to help students check multiple-choice practice quizzes without 
 
 ## Status
 
-Planning stage. This repository currently contains the project plan, feature matrix, test checklist, and synthetic example files. There is no Java implementation to compile or run yet. The student-drawn system diagram is still pending.
+Planning stage. This repository contains the project plan, feature matrix, system diagram, test checklist, and sample quiz files. Java implementation has not started.
 
 ## MVP scope
 
@@ -13,6 +13,12 @@ Planning stage. This repository currently contains the project plan, feature mat
 - Display results in the terminal and export a CSV report.
 
 Every question is worth one point. Blank or missing answers count as incorrect. Questions are matched by number, so row order does not matter. Missing files and malformed input should produce useful error messages.
+
+## How it works
+
+![Midnight Grader flowchart showing how it checks the two input files, scores a quiz, and saves the results](docs/system-diagram.png)
+
+[Editable diagram](docs/system-diagram.drawio)
 
 ## Tech stack
 
@@ -56,7 +62,7 @@ See [sample answer key](examples/answer-key.csv) and [sample answers](examples/s
 - [ ] Display per-question results
 - [ ] Export CSV reports
 - [ ] Test edge cases and finish setup documentation
-- [ ] Draw and commit the system diagram and editable source
+- [x] Draw and commit the system diagram and editable source
 - [ ] Schedule feature: grade multiple quizzes in one run, developed on a feature branch
 - [ ] Future: questions worth different points
 - [ ] Future: results from previous attempts
